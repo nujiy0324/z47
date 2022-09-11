@@ -1,5 +1,5 @@
 echo "install python package";
-pip install -r ./info/requirements.txt;
+pip3 install -r ./info/requirements.txt;
 mkdir /result;
 
 echo "start running python"
