@@ -21,6 +21,7 @@ url0 = "https://old.tcmsp-e.com/tcmspmol/"
 
 
 for i in range(1,num_rows):
+    #filtrater condition : OB < 30 OR DL <0.18
     if float(sheet.cell(i,8).value) < 30.0 or float(sheet.cell(i,11).value) < 0.18:
         file = str(sheet.cell(i,0).value)+".mol2"
         url = url0 + file
